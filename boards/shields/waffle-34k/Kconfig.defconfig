@@ -1,0 +1,6 @@
+if SHIELD_WAFFLE-34k
+
+config ZMK_KEYBOARD_NAME
+    default "zva-waffle-34k"
+
+endif
