@@ -50,9 +50,9 @@ behaviors {
 
     number {
       bindings = <
-        &kp GRAVE &kp 1 &kp 2 &kp 3 &kp - &trans &trans &trans &kp LBKT &kp RBKT 
-        &kp ESC   &kp 4 &kp 5   &kp 6   &kp 0    &trans &trans &trans &trans &trans 
-        &kp DOT   &kp 7 &kp 8   &kp 9   &kp =    &trans    &trans   &trans   &trans   &trans 
+        &kp GRAVE &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_MINUS &trans &trans &trans &kp LBKT &kp RBKT 
+        &kp ESC   &kp KP_N4 &kp KP_N5   &kp KP_N6   &kp KP_N0    &trans &trans &trans &trans &trans 
+        &kp DOT   &kp KP_N7 &kp KP_N8   &kp KP_N9   &kp KP_EQUAL    &trans    &trans   &trans   &trans   &trans 
         &trans   &trans &trans   &trans   
       >;
     };
