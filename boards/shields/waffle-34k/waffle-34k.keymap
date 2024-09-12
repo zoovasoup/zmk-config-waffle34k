@@ -25,7 +25,7 @@ behaviors {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp j>, <&kp ESC>;
+            bindings = <&kp N1>, <&kp N2>;
         };
     };
 
@@ -39,7 +39,7 @@ behaviors {
       //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
     default {
       bindings = <
-        &kp Q &kp W &kp F &kp P    &kp B    &kp J      &kp L   &kp U     &kp Y   &kp SEMI   
+        &kp Q &kp W &kp F &kp P    &kp B    &td0 j ESC      &kp L   &kp U     &kp Y   &kp SEMI   
         &bhm LSHIFT A &bhm LCTRL R &bhm LGUI S &bhm LALT T    &kp G    &kp M      &bhm RALT N   &bhm RGUI E     &bhm RCTRL I   &bhm RSHIFT O
         &kp X &kp C &kp D &kp V    &kp Z    &kp K      &kp H   &kp COMMA &kp DOT &kp FSLH
                                   &lt NUM BSPC  &lt NAV TAB  &lt MSE SPACE  &lt NUM RET  
