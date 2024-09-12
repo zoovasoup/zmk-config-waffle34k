@@ -7,6 +7,18 @@
 #define nav 1
 
 / {
+
+behaviors {
+        bhm: balanced_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
   keymap {
     compatible = "zmk,keymap";
 
@@ -18,7 +30,7 @@
       //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
       bindings = <
         &kp Q &kp W &kp F &kp P    &kp B    &kp J      &kp L   &kp U     &kp Y   &kp SEMI   
-        &kp A &kp R &kp S &kp T    &kp G    &kp M      &kp N   &kp E     &kp I   &kp O
+        &bhm LSHIFT A &bhm LCTRL R &bhm LGUI S &bhm LALT T    &kp G    &kp M      &bhm RALT N   &bhm RGUI E     &bhm RCTRL I   &bhm RSHIFT O
         &kp X &kp C &kp D &kp V    &kp Z    &kp K      &kp H   &kp COMMA &kp DOT &kp FSLH
                                   &kp BSPC  &kp TAB  &kp SPACE  &kp RET  
       >;
