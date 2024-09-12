@@ -16,7 +16,7 @@
     combo_bt {
       timeout-ms = <150>;
       key-positions = <31 32>;
-      bindings = <&lt BTH>;
+      bindings = <&mo BTH>;
     };
   };
 
