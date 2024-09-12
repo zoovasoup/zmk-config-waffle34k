@@ -57,9 +57,9 @@
 
     mouse {
       bindings = <
-        &mkp MB3 &mkp MB2 &trans &mkp MB1 &trans    &trans    &kp K_VOL_DOWN    &kp K_VOL_UP    &kp LBKT    &kp RBKT 
+        &mkp MB3 &mkp MB2 &trans &mkp MB1 &trans    &trans    &kp K_VOL_DN    &kp K_VOL_UP    &kp LBKT    &kp RBKT 
         &trans   &trans   &trans   &trans   &trans    &kp LEFT  &kp DOWN          &kp UP          &kp RIGHT   &kp BSLH
-        &trans   &trans   &trans   &trans   &trans    &trans    &kp K_BRI_DOWN    &kp K_BRI_UP    &trans       &trans 
+        &trans   &trans   &trans   &trans   &trans    &trans    &kp K_BRI_DN    &kp K_BRI_UP    &trans       &trans 
         &key_repeat   &mkp MB1 &trans   &trans   
       >;
     };
