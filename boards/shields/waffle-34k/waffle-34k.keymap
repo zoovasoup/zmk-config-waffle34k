@@ -20,6 +20,13 @@ behaviors {
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
+
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp j>, <&kp ESC>;
+        };
     };
 
   keymap {
@@ -50,10 +57,10 @@ behaviors {
 
     mouse {
       bindings = <
-        &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR 
-        &trans   &trans &trans   &trans   &trans    &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp SQT
-        &trans   &trans &trans   &trans   &trans    &trans    &trans   &trans   &trans   &trans 
-        &trans   &trans &trans   &trans   
+        &mkp MCLK &mkp RCLK &kp HASH &mkp LCLK &kp PRCNT &kp CARET &kp C_VOL_DOWN &kp C_VOL_UP &kp LBKT &kp RBKT 
+        &trans   &trans &trans   &trans   &trans    &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp BSLH
+        &trans   &trans &trans   &trans   &trans    &trans    &kp C_BRI_DOWN   &kp C_BRI_UP   &trans   &trans 
+        &key_repeat   &mkp LCLK &trans   &trans   
       >;
     };
 
@@ -68,8 +75,8 @@ behaviors {
 
     function {
       bindings = <
-        &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR 
-        &trans   &trans &trans   &trans   &trans    &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp SQT
+        &kp f1 &kp f2 &kp f3 &kp f4 &kp f5 &kp f6 &kp f7 &kp f8 &kp f9 &kp f10
+        &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
         &trans   &trans &trans   &trans   &trans    &trans    &trans   &trans   &trans   &trans 
         &trans   &trans &trans   &trans   
       >;
