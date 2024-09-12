@@ -24,7 +24,7 @@ behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <120>;
             bindings = <&kp J>, <&kp ESC>;
         };
     };
@@ -57,9 +57,9 @@ behaviors {
 
     mouse {
       bindings = <
-        &mkp MB3 &mkp MB2 &kp HASH &mkp MB1 &trans &trans &kp C_VOL_DOWN &kp C_VOL_UP &kp LBKT &kp RBKT 
-        &trans   &trans &trans   &trans   &trans    &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp BSLH
-        &trans   &trans &trans   &trans   &trans    &trans    &kp C_BRI_DOWN   &kp C_BRI_UP   &trans   &trans 
+        &mkp MB3 &mkp MB2 &kp HASH &mkp MB1 &trans    &trans    &kp C_VOL_DOWN    &kp C_VOL_UP    &kp LBKT    &kp RBKT 
+        &trans   &trans   &trans   &trans   &trans    &kp LEFT  &kp DOWN          &kp UP          &kp RIGHT   &kp BSLH
+        &trans   &trans   &trans   &trans   &trans    &trans    &kp C_BRI_DOWN    &kp C_BRI_UP    &trans       &trans 
         &key_repeat   &mkp MB1 &trans   &trans   
       >;
     };
