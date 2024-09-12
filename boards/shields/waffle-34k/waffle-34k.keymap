@@ -57,10 +57,10 @@ behaviors {
 
     mouse {
       bindings = <
-        &mkp MB3 &mkp MB2 &kp HASH &mkp MB1 &trans    &trans    &kp C_VOL_DOWN    &kp C_VOL_UP    &kp LBKT    &kp RBKT 
+        &mkp MB3 &mkp MB2 &kp HASH &mkp MB1 &trans    &trans    &consumer C_VOL_DOWN    &consumer C_VOL_UP    &kp LBKT    &kp RBKT 
         &trans   &trans   &trans   &trans   &trans    &kp LEFT  &kp DOWN          &kp UP          &kp RIGHT   &kp BSLH
-        &trans   &trans   &trans   &trans   &trans    &trans    &kp C_BRI_DOWN    &kp C_BRI_UP    &trans       &trans 
-        &trans   &mkp MB1 &trans   &trans   
+        &trans   &trans   &trans   &trans   &trans    &trans    &consumer C_BRI_DOWN    &consumer C_BRI_UP    &trans       &trans 
+        &key_repeat   &mkp MB1 &trans   &trans   
       >;
     };
 
