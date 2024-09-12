@@ -11,38 +11,38 @@
 
 / {
 
-behaviors {
-        bhm: balanced_homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <120>;    // <---[[moderate duration]]
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-        };
-
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <120>;
-            bindings = <&kp J>, <&kp ESC>;
-        };
+  behaviors {
+    bhm: balanced_homerow_mods {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <120>;    // <---[[moderate duration]]
+      quick-tap-ms = <0>;
+      flavor = "balanced";
+      bindings = <&kp>, <&kp>;
     };
+
+    td0: tap_dance_0 {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <120>;
+      bindings = <&kp J>, <&kp ESC>;
+    };
+  };
 
   keymap {
     compatible = "zmk,keymap";
 
-      // -----------------------------------------------------------------------------------------
-      // |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  |
-      // |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |
-      // |  X  |  C  |  D  |  V  |  Z  |   |  K  |  H   |  ,  |  .  |  /  |
-      //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+    // -----------------------------------------------------------------------------------------
+    // |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  |
+    // |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |
+    // |  X  |  C  |  D  |  V  |  Z  |   |  K  |  H   |  ,  |  .  |  /  |
+    //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
     default {
       bindings = <
         &kp Q &kp W &kp F &kp P    &kp B    &td0      &kp L   &kp U     &kp Y   &kp SEMI   
         &bhm LSHIFT A &bhm LCTRL R &bhm LGUI S &bhm LALT T    &kp G    &kp M      &bhm RALT N   &bhm RGUI E     &bhm RCTRL I   &bhm RSHIFT O
         &kp X &kp C &kp D &kp V    &kp Z    &kp K      &kp H   &kp COMMA &kp DOT &kp FSLH
-                                  &lt NUM BSPC  &lt NAV TAB  &lt MSE SPACE  &lt NUM RET  
+        &lt NUM BSPC  &lt NAV TAB  &lt MSE SPACE  &lt NUM RET  
       >;
     };
 
@@ -57,7 +57,7 @@ behaviors {
 
     mouse {
       bindings = <
-        &mkp MB3 &mkp MB2 &kp HASH &mkp MB1 &trans    &trans    &kp K_VOL_DOWN    &kp K_VOL_UP    &kp LBKT    &kp RBKT 
+        &mkp MB3 &mkp MB2 &trans &mkp MB1 &trans    &trans    &kp K_VOL_DOWN    &kp K_VOL_UP    &kp LBKT    &kp RBKT 
         &trans   &trans   &trans   &trans   &trans    &kp LEFT  &kp DOWN          &kp UP          &kp RIGHT   &kp BSLH
         &trans   &trans   &trans   &trans   &trans    &trans    &kp K_BRI_DOWN    &kp K_BRI_UP    &trans       &trans 
         &key_repeat   &mkp MB1 &trans   &trans   
